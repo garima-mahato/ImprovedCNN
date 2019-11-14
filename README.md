@@ -3,7 +3,7 @@
 
 ## Part 1
 
-The output of the ![improved model](https://github.com/genigarus/ImprovedCNN/blob/master/EIP_4_1st_DNN.ipynb) is [0.03502082550192863, 0.9901].
+The output of the [improved model](https://github.com/genigarus/ImprovedCNN/blob/master/EIP_4_1st_DNN.ipynb) is [0.03502082550192863, 0.9901].
 
 ----
 ## Part 2
