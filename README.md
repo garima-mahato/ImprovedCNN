@@ -1,6 +1,13 @@
 # CNN
 ---
 
+## Part 1
+
+The output of the ![improved model](https://github.com/genigarus/ImprovedCNN/blob/master/EIP_4_1st_DNN.ipynb) is [0.03502082550192863, 0.9901].
+
+----
+## Part 2
+
 ### 1) Convolution
 
 In mathematics, *Convolution* is an operation on two functions f(x) and g(x) to give a third function h(x), where g(x) is flipped and translated over f(x). In each translation, each point of both functions are multiplied and then added to give the resulting function h(x), represented by:
