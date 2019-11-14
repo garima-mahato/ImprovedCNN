@@ -10,13 +10,19 @@ A similar concept of cross-correlation, where g(x) is translated without flippin
 5x5 Input Image      and          3x3 matrix
 ![Convolution_schematic – the data science blog](https://ujwlkarn.files.wordpress.com/2016/07/convolution_schematic.gif?w=268&h=196)
 
-The above diagram shows convolution computation. The filter matrix is placed above the input image. For every overlapped position, each element of input matrix is multiplied with the corresponding overlapping element of filter matrix. Then all the multiplied values are added to give a single value which forms the element of the output matrix. The filter is then slid over the input matrix by one pixel(in this example) along one direction at a time. This is called *Stride*. It is the number of position by which the filter matrix is slid over the input matrix at a time. The 3 x 3 matrix is the *filter or kernel or feature detector* and the result matrix is called *convolved feature or activation map or feature map*. Although the convolved feature is of a smaller dimension, the spatial relation between pixels is maintained.
+The above diagram shows convolution computation. The filter matrix is placed above the input image. For every overlapped position, each element of input matrix is multiplied with the corresponding overlapping element of filter matrix. Then all the multiplied values are added to give a single value which forms the element of the output matrix. The filter is then slid over the input matrix by one pixel(in this example) along one direction at a time. This is called *Stride*. It is the number of position by which the filter matrix is slid over the input matrix at a time. The 3 x 3 matrix is the *filter or kernel or feature detector* and the resultant matrix is called *convolved feature or activation map or feature map*. Although the convolved feature is of a smaller dimension, the spatial relation between pixels is maintained.
+
+### 2) Filters/Kernels
 
 Filters detect or extract features. This can be seen from the following example: Suppose there is a filter matrix with values -1 and 1 on two adjacent pixels and 0 everywhere else. Then, in the input image, when side by side pixels are similar, convolution results in 0. Whereas on the edges of image, adjacent pixels have very different values resulting in a large difference and a non-zero value. Thus, this matrix helps in detecting edges. In this way, by filling filter matrix with different values, different feature maps can be derived from the same image focusing on different aspects of the image.
 
+In a CNN, the filters(or matrix of values) in the initial layers detect/extract edges in various forms. The subsequent layers build on these to create filters which detect texture, which in turn detect parts of object and in turn the object itself. These filter values are learnt by the network during backpropagation. 
 
-2) Filters/Kernels
-3) Epochs
+
+### 3) Epochs
+
+An epoch is a forward propagation of input through the network to generate an output followed by a backward propagation of the error between the generated output and the target value based on the cost function through the network.
+
 
 ### 4) 1x1 Convolution
 
@@ -35,7 +41,10 @@ Volume of output x Volume of filter
 3 x 3 convolution is approximately 8 times costlier than 1x1 convolution in computation. Thus, 1x1 convolution facilitates faster computation with less information loss.
 
 
-5) 3x3 Convolution
+### 5) 3x3 Convolution
+
+
+
 6) Feature Maps
 7) Activation Function
 8) Receptive Field
