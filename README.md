@@ -3,9 +3,9 @@
 
 ### 1) Convolution
 
-In mathematics, *Convolution* is an operation on two functions $f(x)$ and $g(x)$ to give a third function $h(x)$, where $g(x)$ is flipped and translated over $f(x)$. In each translation, each point of both functions are multiplied and then added to give the resulting function h(x), represented by:
+In mathematics, *Convolution* is an operation on two functions f(x) and g(x) to give a third function h(x), where g(x) is flipped and translated over f(x). In each translation, each point of both functions are multiplied and then added to give the resulting function h(x), represented by:
 h(x) = (f*g)(x)
-A similar concept of cross-correlation, where $g(x)$ is translated without flipping, is utilised in Neural Networks(NN). In NN terminology, this operation is called convolution and $g(x)$ is called as *kernel* or *filter* when it is used for filtering purposes. Convolution is used to extract features or to filter images. The following example illustrates the use of convolution. Image can be considered to be a matrix of pixel values. So, $f(x)$ and $g(x)$ can be represented as matrix of values. Consider a [5,5] input image with 1 channel and a [3,3] matrix with same number of channels as input,i.e 1 channel.
+A similar concept of cross-correlation, where g(x) is translated without flipping, is utilised in Neural Networks(NN). In NN terminology, this operation is called convolution and g(x) is called as *kernel* or *filter* when it is used for filtering purposes. Convolution is used to extract features or to filter images. The following example illustrates the use of convolution. Image can be considered to be a matrix of pixel values. So, f(x) and g(x) can be represented as matrix of values. Consider a [5,5] input image with 1 channel and a [3,3] matrix with same number of channels as input,i.e 1 channel.
 
 5x5 Input Image      and          3x3 matrix
 ![Convolution_schematic – the data science blog](https://ujwlkarn.files.wordpress.com/2016/07/convolution_schematic.gif?w=268&h=196)
