@@ -28,7 +28,7 @@ In a CNN, the filters(or matrix of values) in the initial layers detect/extract 
 
 ### 3) Epochs
 
-An epoch is a forward propagation of input through the network to generate an output followed by a backward propagation of the error between the generated output and the target value based on the cost function through the network.
+A forward propagation of each input through the network to generate an output followed by a backward propagation of the error between the generated output and the target value based on the cost function through the network, is called as training over an input and its corresponding target(together known as training example). When this training is performed on all the examples within the dataset, it is known as an epoch.
 
 
 ### 4) 1x1 Convolution
