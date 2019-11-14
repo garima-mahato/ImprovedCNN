@@ -53,7 +53,11 @@ During the convolution operation, the filter matrix is placed above the input ma
 
 ### 7) Activation Function
 
+Activation function is a non-linear mathematical operation performed on the input to generate an output. This non-linearity of the activation function helps in mimicing the real world complex mapping between the input and output. A nueral network is composed of neurons. Each neuron takes an input and passes it through this function to give an output. The neuron gets activated or generates output at certain input values, thus the name activation function. Examples of activation functions include - sdigmoid, tanh, ReLU, LeakyReLU.
+
+ReLU or Rectified Linear Unit is a function which return 0 when input is negative and the number itself when it is positive. Its a popular choice of activation function as it helps overcome vanishing gradient problem. 
 
 
+### 8) Receptive Field
 
-8) Receptive Field
+Receptive Field is the area which the filter is looking at in the input matrix. Local receptive field is the area in the immediate input matrix,i.e. the input to the current layer(to which the filter belongs) of the network, which the filter is looking at while global receptive field is the area in the initial input matrix to the network which the filter is looking at.
