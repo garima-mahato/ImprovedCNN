@@ -33,7 +33,7 @@ A forward propagation of each input through the network to generate an output fo
 
 ### 4) 1x1 Convolution
 
-1x1 convolution involves the standard convolution procedure except that filter of size 1x1 is used. This implies that the feature map will be of same width and height as input though the depth, ie number of channels, can be varied by using those many number of 1x1 filter.
+1x1 convolution involves the standard convolution procedure except that filter of size 1x1 is used. Since each input value is multiplied with the single 1x1 filter value, the resultant feature map will be of same width and height as input though the depth, ie number of channels, can be varied by using those many number of 1x1 filter.
 
 Suppose an input of dimension [H,W,F] (where H-height, W-width, F-number of channels of the image) is convolved using F_1 1x1, dimension [1,1,F_1], with zero padding and 1 stride, then the resulting feature map will have  dimension [H,W,F_1]. Here F_1 can be greater, smaller or equal to F. Thus, 1x1 convolution is used to change the dimensionality of the image. When F_1 < F, 1x1 convolution reduces the number of features and hence the computational cost. When F_1 = F, it adds non-linearity to the neural network. When F_1 >F, it adds new parameters to the network. It is mainly used in conjunction with 3x3 or 5x5 convolution to decrease the computational cost. The following example shows this.
 
