@@ -43,8 +43,17 @@ Volume of output x Volume of filter
 
 ### 5) 3x3 Convolution
 
+3x3 convolution is an operation performed on the input matrix using a 3x3 filter/kernel. In this operation, a 3x3 filter matrix is placed above the input matrix. For every overlapped position, each element of input matrix is multiplied with the corresponding overlapping element of filter matrix. Then all the multiplied values are added to give a single value which forms the element of the output matrix. The filter is then slid over the input matrix by one pixel along one direction at a time. This operation performed with a 3x3 filter is known as **3x3 convolution**.
 
 
-6) Feature Maps
-7) Activation Function
+### 6) Feature Maps
+
+During the convolution operation, the filter matrix is placed above the input matrix. For every overlapped position, each element of input matrix is multiplied with the corresponding overlapping element of filter matrix. Then all the multiplied values are added to give a single value which forms the element of the output matrix. The filter is then slid over the input matrix by one pixel along one direction at a time. This is called *Stride*. It is the number of position by which the filter matrix is slid over the input matrix at a time. The resultant matrix is called *convolved feature or activation map or feature map*. Each feature map highlights the feature which its corresponding kernel is trained/created to detect, while diminishing the other features. Thus, each feature map tends to be a picturesque view of the feature in various forms.
+
+
+### 7) Activation Function
+
+
+
+
 8) Receptive Field
